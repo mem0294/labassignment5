@@ -20,3 +20,4 @@ rc=`echo $sequence|rev | tr 'ATCGatcg' 'TAGCtagc'`
 
 echo $name >rc.$1
 echo $rc >>rc.$1
+#
