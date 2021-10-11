@@ -20,15 +20,12 @@ do
     reverse="$reverse${sequence:$i:1}"
 done
 
-echo "$sequence
-$reverse
-"
+echo "$sequence$reverse"
 
 #complement sequence
 rc=`echo $reverse | tr 'atcg' 'tagc'`
 
-echo "$rc
-"
+echo "$rc"
 
 echo $name >$1.rc.txt
 echo $rc >>$1.rc.txt
